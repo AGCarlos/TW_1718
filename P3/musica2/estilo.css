@@ -1,0 +1,215 @@
+/* CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video,footer {
+margin: 0;
+padding: 0;
+border: 0;
+vertical-align: baseline;
+}
+
+
+/* Personalizado */
+
+/*ESTRUCTURA*/
+
+header img,h1 {
+  display: inline;
+}
+
+main {
+  float: left;
+  width: 70%;
+  border-color: red;
+  border-width: 2px;
+  border-style: solid;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+nav li {
+  display: inline;
+}
+
+aside {
+  float: right;
+  width: 29%;
+  border-color: red;
+  border-width: 2px;
+  border-style: solid;
+  margin-top: 10px;
+
+}
+
+footer {
+  border-color: red;
+  border-width: 2px;
+  border-style: solid;
+  clear: both;
+}
+
+/*TITULO*/
+
+header, #igira, #tproductos {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h1{
+ padding: 20px;
+}
+
+/*INDICE*/
+#indice {
+  padding: 6px;
+}
+
+#indice > li {
+  background-color: rgb(204, 209, 209);
+  padding: 3px;
+  margin: 3px;
+}
+
+nav {
+  background-color: rgb(66, 73, 73);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top-color: red;
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-bottom-color: red;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+
+/*MAIN*/
+/*PARTE 1*/
+ h3 {
+  background-color: rgb(249, 231, 159);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+article#parte1 > h3 > p, article h2, article ul{
+  padding-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+div#componentes {
+  text-align: center;
+}
+
+div#componentes p {
+  display: inline;
+}
+
+div#componentes p > img {
+  width: 200px; height: 200px;
+}
+
+article ul{
+  padding-left: 70px;
+  list-style-position: inside;
+}
+
+h2{
+  font-size: 20px;
+}
+/*PARTE2 */
+  table {
+    background-color: rgb(174, 214, 241);
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-spacing: 0;
+  }
+  table tr td, table tr th{
+     padding: 4px;
+   font-family: sans-serif;
+  }
+  table tr:nth-child(even){ background-color: rgb(252, 243, 207); }
+  table tr:nth-child(odd){ background-color: rgb(250, 215, 160); }
+  table tr:nth-child(1){ background-color: rgb(174, 214, 241); }
+  table tr td:first-child {
+    font-weight: bold;
+    font-family: sans-serif;
+}
+  /*PRODUCTOS*/
+
+  #productos {
+    background-color: rgb(249, 231, 159);
+  }
+
+  ul > li img {
+    width: 50px; height: 50px;
+    padding-right: 5px;
+  }
+
+  h4{
+    font-size: 25px;
+  }
+
+  strong {
+    font-weight: bold;
+    color: black;
+    font-family: cursive;
+  }
+
+  ul#tproductos p {
+    color: gray;
+    font-family: sans-serif;
+  }
+
+  ul#tproductos {
+    list-style-type: none;
+  }
+
+  /*FOOTER*/
+
+  footer {
+    background-color: rgb(204, 209, 209);
+    padding: 5px;
+    text-align: center;
+/*
+    border-top-color: red;
+    border-top-style: solid;
+    border-top-width: 2px;
+    */
+  }
+
+  footer > a {
+    padding: 2px;
+    color: blue;
+  }
+
+  /*Main*/
+  main {
+    padding-bottom: 20px;
+  }
+
+  /*LINKS*/
+  /*Indice*/
+  li > a:link {color: green}
+  li > a:visited {color: red}
+  li > a:hover {color: rgb(252, 243, 207)}
+  li > a:hover:visited {color: rgb(252, 243, 207)}
+  #indice > li:hover {background-color: rgb(245, 176, 65)}
+  #indice > li:hover:visited {background-color: rgb(245, 176, 65)}
+  /*Tabla*/
+  table tr:hover {background-color: rgb(236, 112, 99)}
+  table tr td:hover {color: rgb(244, 208, 63)}
+  /*Footer*/
+  footer > a:hover {background-color: rgb(249, 231, 159)}

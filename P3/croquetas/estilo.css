@@ -1,0 +1,144 @@
+  /* CSS reset */
+  html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video,footer {
+	margin: 0;
+	padding: 0;
+	border: 0;
+
+	vertical-align: baseline;
+}
+
+
+  /* Personalizado */
+  /*TITULO*/
+  h1 {
+    background-color: rgb(169, 204, 227);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  body {
+    background-color: lightgreen;
+  }
+
+  /*INDICE*/
+  nav{
+    background-color: rgb(245, 183, 177);
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  ul#ulindice > li {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    width: 80px;
+  }
+
+  ul#ulindice {
+    list-style-type: none;
+    padding-left: 70px;
+  }
+
+  /*INGREDIENTES*/
+  div#ingredientes {
+    background-color: rgb(187, 143, 206);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  div#ingredientes > h2{
+    color: white;
+    background-color: rgb(165, 105, 189);
+    padding-left: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  ul {
+    list-style-type: inherit;
+    list-style-position: inside;
+    padding-left: 30px;
+    padding-top: 10px;
+  }
+
+  /*DESCRIPCION Y INFORMACION*/
+  div#descripcion > h2 ,div#informacion > h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  div#descripcion p {
+    padding-left: 25px;
+  }
+
+  /*PREPARACION*/
+  article#prep {
+    background-color: rgb(253, 235, 208);
+    padding: 20px;
+    margin: 10px;
+  }
+
+  div.preparacion{
+    background-color: rgb(163, 228, 215);
+    margin-bottom: 10px;
+  }
+
+  div.preparacion > h2{
+    background-color: rgb(156, 100, 12);
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+  }
+
+  div.preparacion ul {
+    background-color: rgb(253, 235, 208);
+  }
+
+  iframe {
+    padding-top: 15px;
+    border-style: dashed;
+    border-width: 5px;
+    border-color: purple;
+  }
+
+  /* AJUSTE IMAGENES, LISTAS Y PARRAFOS*/
+  h2,dt{
+    padding-left: 10px;
+    font-weight: bold;
+  }
+
+  img {
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+
+  dd {
+    padding-left: 40px;
+  }
+
+  /* LINKS */
+  a:link {color: blue}
+  a:visited {color: purple}
+  ul#ulindice > li:hover {background-color:gray}
+  ul#ulindice > li:hover:visited {background-color:gray}
