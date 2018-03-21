@@ -22,7 +22,7 @@ time, mark, audio, video,footer {
   /* Personalizado */
   /*TITULO*/
 
-  header, #igira, #tproductos {
+  header, #igira, #tproductos,p#ipr {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -63,7 +63,7 @@ time, mark, audio, video,footer {
     margin-bottom: 20px;
   }
 
-  article#parte1 p, article h2, article ul{
+  article#parte1 p, article h2, article ul, article p#pr {
     padding-left: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -148,6 +148,14 @@ time, mark, audio, video,footer {
       border-bottom-width: 2px;
     }
 
+    /*FORMULARIO*/
+    fieldset {
+      margin: 10px;
+      border-color: black;
+      border-style: groove;
+      border-width: 2px;
+    }
+
     /*LINKS*/
     /*Indice*/
     li > a:link {color: green}
@@ -157,7 +165,7 @@ time, mark, audio, video,footer {
     #indice > li:hover {background-color: rgb(245, 176, 65)}
     #indice > li:hover:visited {background-color: rgb(245, 176, 65)}
     /*Tabla*/
-    table tr:hover {background-color: rgb(236, 112, 99)}
+    table tr:not(:first-child):hover {background-color: rgb(236, 112, 99)}
     table tr td:hover {color: rgb(244, 208, 63)}
     /*Footer*/
     footer > a:hover {background-color: rgb(249, 231, 159)}

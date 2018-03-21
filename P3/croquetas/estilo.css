@@ -84,6 +84,10 @@ time, mark, audio, video,footer {
     padding-left: 25px;
   }
 
+  div#video {
+    text-align: center;
+  }
+
   /*PREPARACION*/
   article#prep {
     background-color: rgb(253, 235, 208);
@@ -117,9 +121,6 @@ time, mark, audio, video,footer {
 
   iframe {
     padding-top: 15px;
-    border-style: dashed;
-    border-width: 5px;
-    border-color: purple;
   }
 
   /* AJUSTE IMAGENES, LISTAS Y PARRAFOS*/

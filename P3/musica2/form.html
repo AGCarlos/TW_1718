@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Avenged Sevenfold</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="../../p2/musica/images/favicon.ico" type="image/x-icon">
+    <link rel="animated icon" href="../../p2/musica/images/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <img src="../../p2/musica/images/logoA7X.png" alt="LogoA7X" width="500" height="200">
+      <h1> Avenged Sevenfold </h1>
+    </header>
+
+    <nav>
+      <ul id="indice">
+        <li><a href="./musica2.html">Inicio</a></li>
+        <li><a href="./bio.html">Biografía</a></li>
+        <li><a href="./disco.html">Discografía</a></li>
+        <li><a href="./form.html">Tienda</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <article>
+        <h2>Formulario de compra</h2>
+          <form action="procesar.php" method ="post">
+            <fieldset>
+              <legend>Album</legend>
+              <input type= "checkbox" name= "album" value="night"/>
+              Nightmare<br>
+              <input type= "checkbox" name= "album" value="hail"/>
+              Hail to the king<br>
+              <input type= "checkbox" name= "album" value="stage"/>
+              The Stage<br>
+              <input type= "checkbox" name= "album" value="cami"/>
+              Camiseta<br>
+              <input type= "checkbox" name= "album" value="taza"/>
+              Taza<br>
+              <input type= "checkbox" name= "album" value="pulse"/>
+              Pulsera<br>
+            </fieldset>
+
+            <fieldset>
+              <legend>Datos personales</legend>
+                <label>Nombre:<br>
+                <input type="text" name="nombre"/></label><br>
+                <label>Apellidos:<br>
+                <input type="text" name="ape"/></label><br>
+                <label>Edad:<br>
+                <input type="number" name="edad"/></label><br>
+                <label>Teléfono:<br>
+                <input type="tel" name="tlfn"/></label><br>
+                <label>Email:<br>
+                <input type="email" name="email"/></label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Datos de pago</legend>
+                <label>Tipo de tarjeta:<br>
+                <input type="radio" name="tipotar" value ="visa"/>
+                Visa<br>
+                <input type="radio" name="tipotar" value ="master"/>
+                Mastercard<br>
+                <input type="radio" name="tipotar" value ="paysafe"/>
+                PaysafeCard<br>
+                </label>
+                <label>Número de tarjeta:<br>
+                <input type="text" name="ntar"/></label><br>
+                <label>Mes y año de caducidad:<br>
+                <input type="month" name="mes"></label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Dirección de envío</legend>
+                <label>Calle:<br>
+                <input type="text" name="calle"/></label><br>
+
+                <label>Población:<br>
+                <input type="text" name="pob"/></label><br>
+
+                <label>Provincia:<br>
+                <select name="provincia">
+                  <option>Almería</option>
+                  <option>Cádiz</option>
+                  <option>Córdoba</option>
+                  <option selected>Granada</option>
+                  <option>Huelva</option>
+                  <option>Jaén</option>
+                  <option>Málaga</option>
+                  <option>Sevilla</option>
+                </select>
+                </label><br>
+
+                <label>Código postal:<br>
+                <input type="number" name="codpost"/></label>
+
+            </fieldset>
+
+            <input type="submit" value="Enviar datos"/>
+            <input type="reset" value="Limpiar formulario"/>
+          </form>
+      </article>
+
+     </main>
+
+     <footer>
+       <a >Privacy </a> <a >Sitemap </a> <a >Contacto</a> <a >Copyright </a>
+     </footer>
+
+  </body>
+</html>
