@@ -1,0 +1,208 @@
+  /* CSS reset */
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed,
+  figure, figcaption, footer, header, hgroup,
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video,footer {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  }
+
+
+  /* Personalizado */
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  body > * {
+    margin: 10px;
+  }
+
+  h1 > img {
+    display: none;
+  }
+
+  header {
+    padding: 20px;
+    margin: 10px;
+    background-color: rgb(168, 168, 168);
+
+    border-color: rgb(133, 133, 133);
+    border-style: solid;
+    border-width: 1px;
+  }
+
+  header > h1 {
+    padding: 10px;
+    border-color: rgb(133, 133, 133);
+    border-style: solid;
+    border-width: 1px;
+  }
+
+  nav {
+    margin: 10px;
+    background-color: rgb(168, 168, 168);
+
+    border-color: rgb(133, 133, 133);
+    border-style: solid;
+    border-width: 1px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav li {
+    list-style-type: none;
+    padding: 5px;
+    margin: 10px;
+    background-color: rgb(168, 168, 168);
+
+    border-color: rgb(133, 133, 133);
+    border-style: solid;
+    border-width: 1px;
+  }
+
+  li{
+    list-style-position: inside;
+  }
+
+  h2, h3 {
+    font-size: 30px;
+  }
+
+  p,#p12 li,#p13 li {
+    font-size: 20px;
+  }
+
+  #parte1{
+      display: flex;
+      flex-direction: row;
+      padding: 10px;
+      margin-bottom: 20px;
+      background-color: rgb(168, 168, 168);
+
+      border-color: rgb(133, 133, 133);
+      border-style: solid;
+      border-width: 1px;
+  }
+
+  #parte1 > * {
+      width: 33%;
+      padding: 10px;
+      margin: 10px;
+      background-color: rgb(209, 207, 209);
+
+      border-color: rgb(133, 133, 133);
+      border-style: solid;
+      border-width: 1px;
+  }
+
+  #parte1 > * > * {
+    border-color: rgb(133, 133, 133);
+    border-style: solid;
+    border-width: 1px;
+    margin: 5px;
+  }
+
+  #parte2{
+      display: flex;
+      flex-direction: row;
+      padding: 10px;
+      margin-top: 20px;
+      background-color: rgb(168, 168, 168);
+
+      border-color: rgb(133, 133, 133);
+      border-style: solid;
+      border-width: 1px;
+  }
+
+  #parte2 > * {
+      width: 33%;
+      padding: 10px;
+      margin: 10px;
+      background-color: rgb(209, 207, 209);
+
+      border-color: rgb(133, 133, 133);
+      border-style: solid;
+      border-width: 1px;
+  }
+
+  #parte2 > * > * {
+    border-color: rgb(133, 133, 133);
+    border-style: solid;
+    border-width: 1px;
+    margin: 5px;
+  }
+
+  #tproductos li {
+    list-style-type: none;
+  }
+
+  #igira {
+    text-align: center;
+  }
+
+  #igira img {
+    width: 70%;
+  }
+
+  #tproductos img {
+    width: 50%;
+  }
+
+
+  /*TABLA*/
+  table {
+    background-color: rgb(174, 214, 241);
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-spacing: 0;
+  }
+  table tr td, table tr th{
+     padding: 4px;
+   font-family: sans-serif;
+  }
+  table tr:nth-child(even){ background-color: rgb(252, 243, 207); }
+  table tr:nth-child(odd){ background-color: rgb(250, 215, 160); }
+  table tr:nth-child(1){ background-color: rgb(174, 214, 241); }
+  table tr td:first-child {
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+
+  /*FOOTER*/
+  footer {
+    background-color: rgb(168, 168, 168);
+
+    border-color: rgb(133, 133, 133);
+    border-style: solid;
+    border-width: 1px;
+  }
+
+  /*LINKS*/
+  /*Indice*/
+  li > a:link {color: green}
+  li > a:visited {color: red}
+  li > a:hover {color: rgb(252, 243, 207)}
+  li > a:hover:visited {color: rgb(252, 243, 207)}
+  #indice > li:hover {background-color: rgb(245, 176, 65)}
+  #indice > li:hover:visited {background-color: rgb(245, 176, 65)}
+  /*Tabla*/
+  table tr:not(:first-child):hover {background-color: rgb(236, 112, 99)}
+  table tr td:hover {color: rgb(244, 208, 63)}
