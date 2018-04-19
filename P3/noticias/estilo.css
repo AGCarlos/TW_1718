@@ -27,6 +27,7 @@ vertical-align: baseline;
     width: 100%;
     padding: 10px;
     text-align: center;
+    background-color: rgb(249, 249, 249);
 
   }
 
@@ -39,15 +40,24 @@ vertical-align: baseline;
 
   header {
     text-align: center;
-    padding: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
 
   }
 
   header h1 {
     font-size: 40px;
+    padding: 20px;
   }
 
 /* Contenido principal */
+
+  main {
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: rgb(249, 249, 249);
+
+  }
 
   .fila:after {
     content: '';
@@ -118,5 +128,3 @@ vertical-align: baseline;
     .ad img {
       width: 99%;
     }
-
-    

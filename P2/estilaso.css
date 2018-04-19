@@ -1,4 +1,5 @@
-body { background-image: url("http://www.ugr.es/~vblanco/img/logougr.png");
-       background-position: top;
-       background-repeat: no-repeat;
-      }
+body {
+  background-image: url("http://www.ugr.es/~vblanco/img/logougr.png");
+  background-position: top;
+  background-repeat: no-repeat;
+}

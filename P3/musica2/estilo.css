@@ -210,6 +210,11 @@ h2{
     margin: 5px;
   }
 
+  img, iframe{
+    max-width: 90%;
+  }
+
+
   /*LINKS*/
   /*Indice*/
   li > a:link {color: green}

@@ -56,6 +56,15 @@ time, mark, audio, video,footer {
   }
 
   /*MAIN*/
+
+   main  {
+     margin-left:10%;
+     margin-right:10%;
+     /*background-repeat: repeat-y;*/
+     /*background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("../img/fondo.jpg")*/
+
+   }
+
   /*PARTE 1*/
    h3 {
     background-color: rgb(249, 231, 159);
@@ -155,6 +164,11 @@ time, mark, audio, video,footer {
       border-style: groove;
       border-width: 2px;
     }
+
+    img, iframe{
+      max-width: 90%;
+    }
+
 
     /*LINKS*/
     /*Indice*/
