@@ -36,8 +36,8 @@ $rev = array(array("Sabelotodo","Solo sé que no sé nada","Muy interesado","Cie
 
         if (empty($_GET['telef']))
         $hayerror['telefono'] = '<p style="color:red;">No ha indicado ningún teléfono</p>';
-        else if (!is_numeric($_GET['telef']))
-        $hayerror['telefono'] = '<p style="color:red;">El teléfono debe ser un número</p>';
+        else if (filter_var($_GET['telef'], FILTER_VALIDATE_INT) == FALSE)
+        $hayerror['telefono'] = '<p style="color:red;">El teléfono debe ser un número (entero)</p>';
         else if (!preg_match('/[0-9]{9}/',$_GET['telef']))
         $hayerror['telefono'] = '<p style="color:red;">El teléfono debe de tener 9 números</p>';
         else $hayerror['telefono'] = '';
@@ -77,7 +77,7 @@ $rev = array(array("Sabelotodo","Solo sé que no sé nada","Muy interesado","Cie
 
                     Fecha de nacimiento:<br>
                     <input type='date' name='nac' ";
-                    if( isset($_GET['nac']) ) echo "value='{$_GET['nac']}' />";
+                    if( isset($_GET['nac']) ) echo "}' />";
                     echo" <br>{$hayerror['nac']}<br>
 
                     Caja de email: <br>
