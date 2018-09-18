@@ -1,0 +1,789 @@
+/* CSS reset */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, footer {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* Personalizado */
+
+/* Estructura grid*/
+
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+}
+
+.login {
+  grid-area: login;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 'header header header header header header' 'login login login login login login' 'main main main main main main' 'footer footer footer footer footer footer';
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+}
+
+/* Contenido */
+
+body {
+  background-color: rgb(33, 33, 33);
+}
+
+/* HEADER */
+
+.header {
+  text-align: center;
+  overflow: auto;
+  background-color: black;
+}
+
+.header div {
+  background-color: black;
+}
+
+li, p, h1, h2, h3, h4, h5, h6, h7, h8 {
+  color: white;
+  list-style-position: inside;
+}
+
+.header img {
+  width: 100%;
+  padding: 5%;
+  box-sizing: border-box;
+}
+
+.header-left {
+  clear: both;
+}
+
+div.header-right {
+  display: inline;
+}
+
+.header ul {
+  padding: 10px;
+}
+
+.header li {
+  list-style-type: none;
+  display: block;
+  padding: 5px;
+  font-size: 30px;
+  font-family: Oswald, sans-serif;
+}
+
+.header li#fanclub a {
+  color: rgb(255, 202, 40);
+}
+
+.header a:link {
+  color: white;
+}
+
+.header div.redes img {
+  max-width: 24px;
+  max-height: 24px;
+  visibility: visible;
+  padding: 0%;
+}
+
+.header div.redes li {
+  display: inline;
+}
+
+.header a:visited {
+  color: white;
+}
+
+/* MAIN */
+
+.main {
+  background-color: rgb(24, 24, 24);
+  padding: 5%;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Oswald;
+  /* Le ponemos nombre */
+  src: url("../imagenes/oswald-regular.woff2");
+  /* Fichero con la fuente */
+}
+
+.main h3 {
+  padding: 10px;
+  background-color: rgb(46, 46, 45);
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: Oswald, helvetica, arial, tahoma, sans-serif;
+}
+
+.main h2 {
+  padding: 15px;
+  background-color: rgb(46, 46, 45);
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: Oswald, helvetica, arial, tahoma, sans-serif;
+}
+
+.main p {
+  padding: 15px;
+  background-color: white;
+  font-family: Oswald, sans-serif;
+  color: black;
+}
+
+.main p, .main ul, .main ul li, .componente {
+  background-color: white;
+}
+
+.main li {
+  color: black;
+  font-family: sans-serif;
+}
+
+/* COMPONENTES */
+
+.componente {
+  padding: 2%;
+}
+
+.componente>* {
+  width: 50%;
+}
+
+.componente p {
+  padding: 2%;
+}
+
+.componente ul {
+  list-style-image: url(../imagenes/flecha.png);
+  padding: 5%;
+}
+
+.componente li {
+  font-family: Oswald, sans-serif;
+}
+
+.componente li img {
+  width: 22px;
+  height: 13px;
+}
+
+.componente ul p {
+  font-size: 20px;
+}
+
+.componente:after {
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+.bio-comp {
+  border-bottom-color: grey;
+  border-bottom-style: groove;
+  border-bottom-width: 20px;
+}
+
+.col {
+  float: left;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.col>* {
+  box-sizing: border-box;
+  width: 90%;
+  margin: 2%;
+}
+
+/* EXITOS*/
+
+.main ul.exitos {
+  padding: 3%
+}
+
+.main ul.exitos li {
+  padding: 2%;
+  margin: 1%;
+  background-color: rgb(46, 46, 45);
+  list-style-image: url(../imagenes/youtube.png);
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-color: rgb(46, 46, 45);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+}
+
+ul.exitos a:link {
+  color: white;
+}
+
+ul.exitos a:visited {
+  color: white;
+}
+
+ul.exitos li:hover {
+  background-color: grey;
+  font-weight: bold;
+}
+
+/* GESTION */
+
+.gestion {
+  color: white;
+}
+
+.gestion input {
+  margin: 1%;
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+.gestion form {
+  background-color: rgb(43, 43, 43);
+  padding: 1%;
+}
+
+.gestion form#formUsuario input {
+  display: block;
+  border-radius: 5px;
+}
+
+.gestion h3 {
+  background-color: rgb(94, 92, 94);
+  color: white;
+  margin-bottom: 1%;
+}
+
+.gestion h2 {
+  background-color: rgb(70, 68, 70);
+  font-weight: bold;
+}
+
+.gestion table, th, td {
+  border: 1px solid white;
+  box-sizing: border-box;
+  border-spacing: 0;
+}
+
+.gestion table {
+  table-layout: fixed;
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+.gestion td {
+  word-wrap: break-word;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+}
+
+.gestion select {
+  padding: 1%;
+  margin: 1%;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border-color: black;
+}
+
+.gestion table.tablapedidos {
+  width: 100%;
+}
+
+.gestion input#volverLog {
+  display: block;
+  padding: 1%;
+}
+
+.botonesGestion {
+  display: inline;
+}
+
+.botonesGestion input {
+  padding: 1%;
+  margin: 3%;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.botonesAdministrador {
+  display: inline;
+  text-align: center;
+  margin: 2%;
+}
+
+.botonesAdministrador form {
+  padding: 2%;
+  border: 5px;
+  border-width: 1%;
+  border-style: dashed;
+  border-color: rgb(134, 148, 18);
+}
+
+.botonesAdministrador input {
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  padding: 1%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+/* LOGIN */
+
+.login {
+  background-color: rgb(24, 24, 24);
+  padding: 10%;
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+  font-family: Oswald, sans-serif;
+}
+
+.login input {
+  padding: 2%;
+  background-color: rgb(129, 129, 129);
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 1%;
+}
+
+/* NOTICIAS */
+
+.noticia {
+  margin-bottom: 35px;
+}
+
+.noticia h2 {
+  padding: 15px;
+  background-color: rgb(46, 46, 45);
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: Oswald, helvetica, arial, tahoma, sans-serif;
+}
+
+.noticia h3 {
+  padding: 10px;
+  background-color: black;
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: Oswald, helvetica, arial, tahoma, sans-serif;
+}
+
+.noticia p {
+  padding: 15px;
+  background-color: white;
+  font-family: Oswald, sans-serif;
+  color: black;
+  font-weight: bold;
+}
+
+/* BIOGRAFIA */
+
+.bio h3 {
+  background-color: rgb(31, 31, 31);
+  font-family: Oswald, helvetica, arial, tahoma, sans-serif;
+}
+
+/* DISCOGRAFÍA */
+
+.disco .img-d {
+  padding: 10%;
+  text-align: center;
+}
+
+.disco h2 {
+  text-align: center;
+}
+
+.disco h3 {
+  text-align: center;
+  background-color: rgb(133, 133, 133);
+}
+
+.disco table {
+  background-color: rgb(31, 31, 31);
+  color: white;
+  font-family: Oswald, sans-serif;
+  padding: 10% width:100%;
+  width: 100%;
+}
+
+.disco table tr:first-child {
+  text-align: center;
+}
+
+.disco table td {
+  padding: 1%;
+}
+
+.disco table tr:nth-child(odd) {
+  background-color: rgb(85, 85, 85);
+}
+
+.discoCompra {
+  background-color: rgb(133, 133, 133);
+  overflow: auto;
+}
+
+.discoCompra h3 {
+  float: left;
+}
+
+.discoCompra h3#precio {
+  float: right;
+}
+
+.discoCompra form {
+  float: right;
+  padding: 1%;
+}
+
+.discoCompra p {
+  float: right;
+  color: white;
+  background-color: rgb(135, 135, 135);
+}
+
+.discoCompra input {
+  background-color: black;
+  color: white;
+  border-color: black;
+  font-weight: bold;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+
+/*Formularios de búsqueda*/
+
+form#formBusqueda {
+  padding: 1%;
+  background-color: rgb(61, 61, 61);
+}
+
+form#formBusqueda input, label, select {
+  margin-bottom: 1%;
+}
+
+form#formBusqueda label {}
+
+/*Formulario de compra de disco*/
+
+.compraDisco {
+  color: white;
+}
+
+.compraDisco label {
+  padding: 1%;
+  display: block;
+  width: auto;
+}
+
+.compraDisco fieldset {
+  padding: 1%;
+  border-color: white;
+  border-width: thick;
+  border-style: inset;
+  margin-bottom: 1%;
+  background-color: rgb(70, 68, 70);
+}
+
+.compraDisco input {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+
+/* CONCIERTOS */
+
+.tour {
+  width: 100%;
+}
+
+.concierto {
+  width: 100%;
+}
+
+.concierto h3#fechad {
+  color: white;
+  background-color: rgb(98, 98, 98);
+  float: left;
+}
+
+.concierto h3#lugard {
+  color: white;
+  background-color: rgb(125, 125, 125);
+  float: right;
+}
+
+.concierto p {
+  color: white;
+  background-color: rgb(148, 145, 145);
+  clear: both;
+}
+
+/* Formularios de edicion de datos*/
+
+.formOperacion input {
+  color: white;
+  background-color: black;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 1%;
+}
+
+.formOperacion label {
+  color: white;
+  display: block;
+  margin-top: 1%;
+}
+
+.formOperacion select {
+  margin-top: 1%;
+}
+
+.formOperacion h3#completado {
+  clear: both;
+}
+
+/* IMAGENES */
+
+img {
+  width: 100%;
+  max-width: 100%
+}
+
+div.img-c {
+  padding: 0%;
+}
+
+.img-p>img {
+  max-width: 100%;
+  width: 100%;
+}
+
+div.img-p {
+  padding: 5%;
+}
+
+img#img-comp {
+  /*width: 100px;
+  height: 50px;*/
+}
+
+/* ASIDE */
+
+.aside {
+  text-align: center;
+  box-sizing: border-box;
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: Oswald, helvetica, arial, tahoma, sans-serif;
+  padding: 10%;
+  background-color: rgb(24, 24, 24);
+}
+
+.aside h2 {
+  padding-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.comp-aside {
+  background-color: white;
+  box-sizing: border-box;
+  margin-bottom: 45px;
+}
+
+.comp-aside img {
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  max-width: 90%;
+}
+
+.comp-aside h2 {
+  padding: 5%;
+  color: black;
+}
+
+/* FOOTER */
+
+.footer {
+  color: white;
+  padding: 1%;
+  background-color: rgb(24, 24, 24);
+  border-color: rgb(70, 70, 70);
+  border-width: 2px;
+  border-style: ridge;
+}
+
+/* LINKS */
+
+a {
+  text-decoration: none;
+}
+
+/* Estilo responsivo */
+
+@media only screen and (min-width: 900px) {
+  body {
+    background-color: rgb(33, 33, 33);
+    margin-left: 12%;
+    margin-right: 12%;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-areas: 'header header header header header header' 'main main main main login login' 'footer footer footer footer footer footer';
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+  .header {
+    background-color: black;
+    overflow: auto;
+    padding: 1%;
+  }
+  .header img {
+    width: 300px;
+    height: 150px;
+    padding: 15px;
+  }
+  .header-left {
+    float: left;
+  }
+  .header-right {
+    float: right;
+  }
+  .header li {
+    list-style-type: none;
+    display: inline;
+    padding: 5px;
+    font-size: 20px;
+    font-family: Oswald, sans-serif;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  body {
+    background-color: rgb(33, 33, 33);
+    margin: 0%;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-areas: 'header header header header header header' 'login login login login login login' 'main main main main main main' 'footer footer footer footer footer footer';
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+  .header {
+    text-align: center;
+    overflow: auto;
+    background-color: black;
+  }
+  .header img {
+    width: 100%;
+    height: 500px;
+    padding: 15px;
+    clear: both;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  .header-left {
+    float: none;
+  }
+  .header-left::after {
+    clear: both;
+  }
+  .header-right {
+    float: inherit;
+  }
+  .header li {
+    list-style-type: none;
+    display: block;
+    padding: 5px;
+    font-size: 50px;
+    font-family: Oswald, sans-serif;
+  }
+  .header div.redes li {
+    display: inline;
+  }
+  .header div.redes img {
+    max-width: 80px;
+    max-height: 80px;
+    visibility: visible;
+    padding: 0%;
+  }
+  .login h2 {
+    font-size: 60px;
+  }
+  .login label {
+    font-size: 50px;
+  }
+  .login input {
+    font-size: 50px;
+    padding: 4%;
+    margin-bottom: 3%;
+  }
+  .album td, th, h3 {
+    font-size: 50px;
+  }
+  .album input {
+    font-size: 40px;
+  }
+  .compraDisco legend, input, label {
+    font-size: 40px;
+  }
+  table#usuarios td, th {
+    font-size: 30px;
+  }
+  h2#busqueda {
+    font-size: 60px;
+  }
+  table#tableGest td {
+    font-size: 30px;
+  }
+  table#tableGest input {
+    font-size: 30px;
+  }
+  form#formUsuario select {
+    font-size: 40px;
+  }
+  form#formBusqueda label {
+    font-size: 40px;
+  }
+  form#formBusqueda input {
+    font-size: 40px;
+  }
+  form#formBusqueda select {
+    font-size: 40px;
+  }
+  .disco h2 label {
+    font-size: 50px;
+  }
+  .footer {
+    font-size: 12px;
+    text-align: center;
+  }
+}

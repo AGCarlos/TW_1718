@@ -1,0 +1,1 @@
+[30-Jun-2018 17:17:32 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'cag191718'@'localhost' (using password: YES) in /home/susaneda/public_html/rosarock.com/kar/admin/administracion.php on line 9
